@@ -36,12 +36,24 @@ public class Usuario {
     
     
     //Método que traz o true ou false do equals, atravéz de uma verificação
-    @Override
+    /*@Override
     public int hashCode() {
         int hash = 5;
         hash = 67 * hash + Objects.hashCode(this.nome);
         return hash;
+    }*/
+    
+    
+    //ou
+    @Override//percorre todos os valores do objeto e verifica
+    public int hashCode() {
+        //return 1;//retorno igual
+        return this.nome.length();//retorno de pesquisa por quantidade de caracteres, se a quantidade de caracteres
+                                                        //for igual, ele começa a fazer a pesquisa(equals)
     }
+    
+    
+    
 
  
     
