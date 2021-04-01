@@ -5,18 +5,25 @@ import java.util.ArrayList;
 public class Compra {
 
     //classe compra, onde defino que a compra 
-    //será composta de produtos(arrayList) e um cliente
-    
+    //será composta de produtos(arrayList) e um cliente   
     ArrayList<Produto> produtos = new ArrayList();
     
-    
-    double total(){
-        double subtotal = 0;
+    //Faz a conta do total dos itens selecionados pelo cliente
+    double getTotal(){
+        double total = 0;
         for(Produto p: produtos){
-            subtotal = subtotal + (p.preco * p.qt);
-            //ou 
-            //subtotal += p.preco * p.qt;
+            total += p.preco * p.qt;      
         }
-        return subtotal;
+        System.out.println("Total da compra: "+total);
+        return total;
+    }
+    
+    //Mostra a lista dos itens do cliente
+    void getLista()
+    {
+            for(Produto p : produtos)
+            {
+                System.out.println("Produto: "+p.nome + "   Preço: "+p.preco+"   Quantidade: "+p.qt);
+            }
     }
 }
