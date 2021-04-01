@@ -1,5 +1,7 @@
 package oo.composicao;
 
+import javax.swing.JOptionPane;
+
 public class CompraTeste {
     
     public static void main(String[] args) {
@@ -9,7 +11,8 @@ public class CompraTeste {
         Compra compra = new Compra();
 
         //2-Crio o cliente
-        Cliente cliente = new Cliente("João Marcos");
+        String n = JOptionPane.showInputDialog("");
+        Cliente cliente = new Cliente(n);
         
         //3-Chamo o objeto da nova compra, e dentro da nova compra chamo o objeto produtos
         //que criei. Chamo a propriedade adicionar e instâncio um novo produto, chamando o método
@@ -19,6 +22,7 @@ public class CompraTeste {
         compra.produtos.add(new Produto("MOUSE ",4 , 48.90));
         
         System.out.println("Nome do cliente= "+ cliente.nome);
+        JOptionPane.showConfirmDialog(null, n);
         System.out.println("Valor total da compra= "+ compra.total());
         
     }
