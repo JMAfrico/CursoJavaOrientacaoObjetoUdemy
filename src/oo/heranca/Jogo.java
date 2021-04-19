@@ -5,30 +5,34 @@ package oo.heranca;
 public class Jogo {
 
     public static void main(String[] args) {
-        Jogador j1 = new Jogador();
+        Jogador monstro = new Monstro();
         
-        j1.x = 5;
-        j1.y = 5;
+        monstro.x = 5;
+        monstro.y = 5;
         
-        System.out.println("Posição x Inicial:"+j1.x);
-        System.out.println("Posição y Inicial:"+j1.y);
+        System.out.println("Posição x Inicial:"+monstro.x);
+        System.out.println("Posição y Inicial:"+monstro.y);
         
-        j1.andar(Direcao.LESTE);
-        j1.andar(Direcao.NORTE);
+        monstro.andar(Direcao.LESTE);
+        monstro.andar(Direcao.NORTE);
         
-        System.out.println("Coodenada x Atual:"+j1.x);
-        System.out.println("Coodenada y Atual:"+j1.y);
+        System.out.println("Coodenada x Atual:"+monstro.x);
+        System.out.println("Coodenada y Atual:"+monstro.y);
         
-        Jogador j2 = new Jogador();
-        j2.x = 6;
-        j2.y = 5;
+        Jogador heroi = new Heroi();
+        heroi.x = 6;
+        heroi.y = 5;
         
-        System.out.println(j1.vida);
-        System.out.println(j2.vida);
+        System.out.println(monstro.vida);
+        System.out.println(heroi.vida);
 
-        System.out.println(j2.atacar(j1));
-        System.out.println(j1.vida);
-        System.out.println(j2.vida);
+        System.out.println(heroi.atacar(monstro));
+        System.out.println(monstro.vida);
+        System.out.println(heroi.vida);
+        
+        System.out.println(monstro.atacar(heroi));
+        System.out.println(monstro.vida);
+        System.out.println(heroi.vida);
         
     }
 }
