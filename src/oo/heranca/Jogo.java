@@ -19,6 +19,16 @@ public class Jogo {
         System.out.println("Coodenada x Atual:"+j1.x);
         System.out.println("Coodenada y Atual:"+j1.y);
         
+        Jogador j2 = new Jogador();
+        j2.x = 6;
+        j2.y = 5;
+        
+        System.out.println(j1.vida);
+        System.out.println(j2.vida);
+
+        System.out.println(j2.atacar(j1));
+        System.out.println(j1.vida);
+        System.out.println(j2.vida);
         
     }
 }
