@@ -9,4 +9,16 @@ public class Pessoa {
         this.idade = idade;
         this.nome = nome;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    
+    
+    
 }
