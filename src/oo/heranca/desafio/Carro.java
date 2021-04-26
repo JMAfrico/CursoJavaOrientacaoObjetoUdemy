@@ -2,25 +2,27 @@ package oo.heranca.desafio;
 
 public class Carro {
 
-    public double aceleraçao = 0;
-    public final double VELOCIDADE_MAXIMA;
+    //private só membros da classe acessam
+    protected double aceleraçao = 0;
+    protected final double VELOCIDADE_MAXIMA;
 
-    public Carro(double velocidade_maxima) {
+    
+    protected Carro(double velocidade_maxima) {
         VELOCIDADE_MAXIMA = velocidade_maxima;
     }
     
-    
-    public boolean acelerar(){
+    //protected, só quem é herança e/ou fazem parte do mesmo pacote pode acessar
+    protected boolean acelerar(){
             aceleraçao = aceleraçao + 5;   
         return true;
     }
     
-    public boolean frear(){
+    protected boolean frear(){
         aceleraçao = aceleraçao - 5;
         return true;
     }
     
-    public double getAceleracao(){
+    protected double getAceleracao(){
         return aceleraçao;
     }
     

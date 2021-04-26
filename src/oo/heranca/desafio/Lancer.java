@@ -3,13 +3,13 @@ package oo.heranca.desafio;
 
 public class Lancer extends Carro{
 
-    public Lancer(double veloc_max) {//chamo o consutrutor da classe pai, onde diz que a velocidade maxima vai ser passado na chamada do objeto
+    protected Lancer(double veloc_max) {//chamo o consutrutor da classe pai, onde diz que a velocidade maxima vai ser passado na chamada do objeto
         super(veloc_max);
     }
 
     
     @Override
-    public boolean acelerar() {
+    protected boolean acelerar() {
         boolean acelerou = true;//crio uma variavel para alterar o valor boolean da classe pai
         aceleraçao = aceleraçao + 12;
         
@@ -23,7 +23,7 @@ public class Lancer extends Carro{
     }
 
     @Override
-    public boolean frear() {
+    protected boolean frear() {
         return super.frear(); //To change body of generated methods, choose Tools | Templates.
     }
     
