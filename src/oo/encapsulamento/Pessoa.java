@@ -3,13 +3,13 @@ package oo.encapsulamento;
 
 public class Pessoa {
 
-    private static int idade;
+    private int idade;
     
     public Pessoa(int idade){ // construtor recebendo por parametro uma idade, que vem do método setIdade
         setIdade(idade);
     }
 
-    public int getIdade() {
+    public int getIdade() {//o tipo do método deve ser igual ao da variável, que deve ser escrito com get na frente e primeira maiuscula
         return idade;
     }
 
