@@ -8,7 +8,7 @@ public class Corrida {
         Lancer lancer = new Lancer(200);
         Fiesta fiesta = new Fiesta(120);//se eu chamar assim, vou alterar a velocidade de cada fiesta
         Fiesta fiesta2 = new Fiesta();//se eu chamar assim, vou deixar a velocidade padrão que está definida na classe fiesta
-        
+             
         lancer.acelerar();
         lancer.acelerar();
         lancer.acelerar();

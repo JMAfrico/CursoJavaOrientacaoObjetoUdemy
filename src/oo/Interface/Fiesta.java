@@ -58,6 +58,13 @@ public class Fiesta extends Carro implements Esportivo,Luxo{
             arLigado = false;
     }
 
+    @Override
+    public int nivelAr() {
+        return Luxo.super.nivelAr(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+
 
 
 
