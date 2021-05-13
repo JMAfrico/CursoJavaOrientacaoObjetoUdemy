@@ -1,7 +1,5 @@
 package oo.composicao.desafio;
 
-import java.util.ArrayList;
-
 public class Itens {
     
     //crio item para armazenar vários produtos
