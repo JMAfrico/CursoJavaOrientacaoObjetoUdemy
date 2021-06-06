@@ -1,6 +1,6 @@
 package oo.Gererics;
 
-public class caixaObjeto {
+public class caixaSemGenerics {
     
         private Object coisa;
         
