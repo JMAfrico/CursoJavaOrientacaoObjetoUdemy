@@ -4,7 +4,7 @@ package oo.Interface;
 public class Carro {
 
         //private só membros da classe acessam
-    private double aceleraçao = 0;
+    private double aceleracao = 0;
     protected final double VELOCIDADE_MAXIMA;
 
     
@@ -14,25 +14,25 @@ public class Carro {
     
     //protected, só quem é herança e/ou fazem parte do mesmo pacote pode acessar
     protected boolean acelerar(){
-            aceleraçao = aceleraçao + 5;   
+            aceleracao = aceleracao + 5;   
         return true;
     }
     
     protected boolean frear(){
-        aceleraçao = aceleraçao - 5;
+        aceleracao = aceleracao - 5;
         return true;
     }
     
     protected double getAceleracao(){
-        return aceleraçao;
+        return aceleracao;
     }
     
     protected void setAceleracao(double aceleracao){
-        this.aceleraçao  = aceleracao;
+        this.aceleracao  = aceleracao;
     }
     
     @Override//Quando eu chamar o objeto, por padrão vai aparecer essa mensagem
     public String toString(){
-        return "Aceleração atual "+aceleraçao+"Km/h";
+        return "Aceleração atual "+aceleracao+"Km/h";
     }
 }

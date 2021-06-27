@@ -3,7 +3,7 @@ package oo.heranca.desafio;
 public class Carro {
 
     //private só membros da classe acessam
-    protected double aceleraçao = 0;
+    protected double aceleracao = 0;
     protected final double VELOCIDADE_MAXIMA;
 
     
@@ -13,21 +13,21 @@ public class Carro {
     
     //protected, só quem é herança e/ou fazem parte do mesmo pacote pode acessar
     protected boolean acelerar(){
-            aceleraçao = aceleraçao + 5;   
+            aceleracao = aceleracao + 5;   
         return true;
     }
     
     protected boolean frear(){
-        aceleraçao = aceleraçao - 5;
+        aceleracao = aceleracao - 5;
         return true;
     }
     
     protected double getAceleracao(){
-        return aceleraçao;
+        return aceleracao;
     }
     
     @Override//Quando eu chamar o objeto, por padrão vai aparecer essa mensagem
     public String toString(){
-        return "Aceleração atual "+aceleraçao+"Km/h";
+        return "Aceleracao atual "+aceleracao+"Km/h";
     }
 }

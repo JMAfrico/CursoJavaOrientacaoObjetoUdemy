@@ -11,13 +11,13 @@ public class Lancer extends Carro{
     @Override
     protected boolean acelerar() {
         boolean acelerou = true;//crio uma variavel para alterar o valor boolean da classe pai
-        aceleraçao = aceleraçao + 12;
+        aceleracao = aceleracao + 12;
         
-         if ((aceleraçao + 12) > VELOCIDADE_MAXIMA) {
-            aceleraçao = VELOCIDADE_MAXIMA;
+         if ((aceleracao + 12) > VELOCIDADE_MAXIMA) {
+            aceleracao = VELOCIDADE_MAXIMA;
         }
         else{
-            aceleraçao = aceleraçao + 12;
+            aceleracao = aceleracao + 12;
         }
         return acelerou;
     }
