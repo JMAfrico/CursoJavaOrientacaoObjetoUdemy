@@ -15,7 +15,7 @@ public class ConjuntoSetComportado {
         
         //Minha lista entre as chaves menores e maiores
         //Significa que minha lista vai ser desse tipo
-        //Set<String> listaAprovados = new HashSet<>(); // LISTA NÃO ORDENADA
+        //Set<String> listaAprovados = new HashSet<>(); // LISTA NAO ORDENADA
         
         SortedSet<String> listaAprovados = new TreeSet<>(); // LISTA ORDENADA
         
