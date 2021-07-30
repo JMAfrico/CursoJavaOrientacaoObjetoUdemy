@@ -2,8 +2,8 @@ package Lambdas.Predicado;
 
 public class Produto {
 
-    final  String nome;
-    final  Double preco;
+    final  public String nome;
+    final  public Double preco;
     final  Double desconto;
 
     public Produto(String nome, Double preco, Double desconto) {
@@ -12,6 +12,10 @@ public class Produto {
         this.desconto = desconto;
     }
     
+    @Override
+    public String toString(){
+        return nome + " Preço:"+preco;
+    }
     
     
     
