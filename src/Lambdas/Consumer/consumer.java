@@ -1,4 +1,4 @@
-package Lambdas.Consumidor;
+package Lambdas.Consumer;
 
 import Lambdas.Predicado.Produto;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ public class consumer {
 
     public static void main(String[] args) {
         
-        //FUNÇÃO DE IMPRIMIR
+        //FUNCAO DE IMPRIMIR
          Consumer<Produto> imprimir = 
                    p -> System.out.println(p.nome);
          
